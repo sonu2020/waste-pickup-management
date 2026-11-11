@@ -1,0 +1,6 @@
+.env
+node_modules/
+bookings.json
+backend/.env
+backend/node_modules/
+backend/bookings.json

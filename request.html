@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Pickup - Clean District</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo"
+        > <span class="logo-icon">♻</span> CLEAN CALICUT
+      
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="request.html" class="active">Book pickup</a>
+        <a href="track.html">Track</a>
+        <!-- <a href="bookings.html">My bookings</a> -->
+        <a href="admin.html">Admin</a>
+      </nav>
+      <a href="request.html" class="header-btn">Book now</a>
+    </header>
+
+    <main class="page">
+      <p class="eyebrow">BOOK A PICKUP</p>
+      <h1 class="page-title">Request a Pickup</h1>
+
+      <form id="pickupForm" class="form-card">
+        <label
+          >Service
+          <select id="service">
+            <option value="Dry Waste">Dry Waste (from ₹49)</option>
+            <option value="Wet Waste">Wet Waste (from ₹49)</option>
+            <option value="Mixed Waste">Mixed Waste (from ₹59)</option>
+            <option value="Bulk Waste">Bulk / Other Waste (from ₹299)</option>
+          </select>
+        </label>
+
+        <div class="row">
+          <label
+            >Name
+            <input type="text" id="name" placeholder="Your name" required />
+          </label>
+          <label
+            >Phone number
+            <input
+              type="tel"
+              id="phone"
+              placeholder="10 digit number"
+              pattern="[0-9]{10}"
+              title="Enter a 10 digit phone number"
+              required
+            />
+          </label>
+        </div>
+
+        <label
+          >Full address
+          <textarea
+            id="address"
+            placeholder="House name/number, street, landmark"
+            required
+          ></textarea>
+        </label>
+
+        <div class="row">
+          <label
+            >Area / Ward
+            <input
+              type="text"
+              id="area"
+              placeholder="Your area or ward"
+              required
+            />
+          </label>
+          <label
+            >Pickup date
+            <input type="date" id="date" required />
+          </label>
+        </div>
+
+        <label
+          >Time slot
+          <select id="slot">
+            <option>Morning (8 AM - 11 AM)</option>
+            <option>Afternoon (12 PM - 3 PM)</option>
+            <option>Evening (4 PM - 6 PM)</option>
+          </select>
+        </label>
+
+        <label
+          >Notes (optional)
+          <textarea
+            id="notes"
+            placeholder="Anything we should know?"
+          ></textarea>
+        </label>
+
+        <div class="price-box">Estimated price: <b id="price">₹49</b></div>
+
+        <button type="submit">Confirm Booking</button>
+      </form>
+
+      <div id="success" class="success-box" hidden>
+        <div class="success-icon">✅</div>
+        <h2>Booking confirmed!</h2>
+        <p>Your booking ID is</p>
+        <div class="booking-id" id="newId"></div>
+        <p>
+          Save this ID. You will need it with your phone number to track your
+          pickup.
+        </p>
+        <div class="hero-buttons" style="justify-content: center">
+          <a href="track.html" class="btn-dark">Track my pickup</a>
+          <a href="request.html" class="btn-light">Book another</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Clean District Waste Pickup. All rights reserved.</p>
+    </footer>
+
+    <script src="common.js"></script>
+    <script src="request.js"></script>
+  </body>
+</html>

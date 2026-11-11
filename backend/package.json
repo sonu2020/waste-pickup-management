@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "setup": "bun setup-email.js",
+    "test-email": "bun test-email.js"
+  }
+}

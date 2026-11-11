@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Pickup - Clean District</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo"
+        > <span class="logo-icon">♻</span> CLEAN CALICUT
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="request.html">Book pickup</a>
+        <a href="track.html" class="active">Track</a>
+        <!-- <a href="bookings.html">My bookings</a> -->
+        <a href="admin.html">Admin</a>
+      </nav>
+      <a href="request.html" class="header-btn">Book now</a>
+    </header>
+
+    <main class="page">
+      <p class="eyebrow">TRACK</p>
+      <h1 class="page-title">Track Your Pickup</h1>
+
+      <form id="trackForm" class="form-card">
+        <div class="row">
+          <label
+            >Booking ID
+            <input
+              type="text"
+              id="bookingId"
+              placeholder="Example: CD482913"
+              required
+            />
+          </label>
+          <label
+            >Phone number
+            <input
+              type="tel"
+              id="phone"
+              placeholder="10 digit number"
+              required
+            />
+          </label>
+        </div>
+        <button type="submit">Track</button>
+      </form>
+
+      <div id="result"></div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Clean District Waste Pickup. All rights reserved.</p>
+    </footer>
+
+    <script src="common.js"></script>
+    <script src="track.js"></script>
+  </body>
+</html>
