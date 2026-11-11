@@ -1,0 +1,12 @@
+backend
+node_modules
+.git
+.gitignore
+.assetsignore
+wrangler.jsonc
+package.json
+bun.lock
+.env
+bookings.json
+.DS_Store
+*.md
